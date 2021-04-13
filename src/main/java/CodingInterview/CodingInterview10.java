@@ -33,7 +33,8 @@ package CodingInterview;
  * 链接：https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  **/
-public class CodingInterview10 {
+public class
+CodingInterview10 {
 
     public int fib(int n) {
         int a = 0, b = 1, sum;
