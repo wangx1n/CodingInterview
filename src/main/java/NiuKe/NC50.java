@@ -36,7 +36,7 @@ public class NC50 {
         ListNode node = reverseKGroup(node1,3);
     }
 
-    public static ListNode reverseKGroup(ListNode head, int k) {
+    public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null) {
             return head;
         }
@@ -64,7 +64,7 @@ public class NC50 {
         return res.next;
     }
 
-    public static class ListNode {
+    private class ListNode {
         public ListNode(int val) {
             this.val = val;
         }
