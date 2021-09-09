@@ -11,7 +11,6 @@ public class LC96 {
         if( n == 0 ) {
             return 0;
         }
-
         return recur(1, n).size();
     }
 
@@ -26,7 +25,6 @@ public class LC96 {
         for (int i = begin; i <= end; i++) {
             List<TreeNode> lefts = recur(begin, i - 1);
             List<TreeNode> rights = recur(i + 1, end);
-
             for (TreeNode leftNodes : lefts) {
                 for (TreeNode rightNodes : rights) {
                     TreeNode node = new TreeNode(i);
@@ -36,7 +34,6 @@ public class LC96 {
                 }
             }
         }
-
         return result;
     }
 }
