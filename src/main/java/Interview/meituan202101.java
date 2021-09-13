@@ -1,4 +1,4 @@
-package InterviewTest.Meituan.meituan2021;
+package Interview;
 
 import java.util.HashMap;
 import java.util.HashSet;

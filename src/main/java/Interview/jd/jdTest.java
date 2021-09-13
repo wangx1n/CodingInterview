@@ -1,4 +1,4 @@
-package InterviewTest.Meituan.meituan2021.jd;
+package Interview.jd;
 
 public class jdTest {
     public static void main(String[] args) {

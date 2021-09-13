@@ -1,4 +1,4 @@
-package InterviewTest.Meituan.meituan2021.meituan;
+package Interview.meituan;
 
 import java.util.*;
 
