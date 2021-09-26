@@ -5,11 +5,13 @@ public class LC148 {
         ListNode node3 = new ListNode(3);
         ListNode node2 = new ListNode(5);
         ListNode node1 = new ListNode(7);
+        ListNode node0 = new ListNode(1);
+        node0.next = node1;
         node1.next = node2;
         node2.next = node3;
         node3.next = null;
         LC148 l = new LC148();
-        l.sortList(node1);
+        l.sortList(node0);
     }
     public ListNode sortList(ListNode head) {
         return sort(head, null);
@@ -30,7 +32,7 @@ public class LC148 {
                 fast = fast.next;
             }
         }
-        ListNode left = sort(head, slow);
+        ListNode left = sort(head, slow); // 5. 这里看似重复用了一遍slow?
         ListNode right = sort(slow, tail);
         ListNode res = merge(left, right);
         return res;
