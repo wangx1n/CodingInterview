@@ -22,7 +22,6 @@ public class shopee02 {
             cases.remove(b);
             cases.add(c);
             res+=c;
-            HashMap
         }
         return res;
     }
