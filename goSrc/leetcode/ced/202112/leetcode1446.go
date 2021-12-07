@@ -1,4 +1,5 @@
 package _02112
+
 /**
 easy
 给你一个字符串 s ，字符串的「能量」定义为：只包含一种字符的最长非空子字符串的长度。
@@ -39,17 +40,17 @@ s 只包含小写英文字母。
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/consecutive-characters
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- */
+*/
 func maxPower(s string) int {
-	ans, cnt := 1, 1
+	ans, tmp := 1, 1
 	for i := 1; i < len(s); i++ {
 		if s[i] == s[i-1] {
-			cnt++
-			if cnt > ans {
-				ans = cnt
+			tmp++
+			if tmp > ans {
+				ans = tmp
 			}
 		} else {
-			cnt = 1
+			tmp = 1
 		}
 	}
 	return ans
