@@ -47,7 +47,7 @@ func maxSumOfThreeSubarrays(nums []int, k int) []int {
 			}
 			if maxSum2 + sum3 > totalSum {
 				totalSum = maxSum2 + sum3
-				ans = []int{maxSum1Index, maxSum2Index1, i - k + 1}
+				ans = []int{maxSum2Index1, maxSum2Index2, i - k + 1}
 			}
 			sum1 -= nums[i - 3 * k + 1]
 			sum2 -= nums[i - 2 * k + 1]
