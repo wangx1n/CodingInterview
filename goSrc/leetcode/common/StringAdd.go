@@ -1,7 +1,7 @@
 package common
 
 // stringAdd 字符串相加
-func stringAdd(x, y string) string {
+func StringAdd(x, y string) string {
 	res := []byte{}
 	carry, cur := 0, 0
 	for x != "" || y != "" || carry != 0 {
